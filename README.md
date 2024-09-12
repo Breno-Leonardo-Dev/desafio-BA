@@ -3,11 +3,14 @@
 
 Link Api: https://desafio-ba.onrender.com
 
+Obs: A primeira requisição pode demorar, pois a api fica inativa.
+
 Link Swagger: https://desafio-ba.onrender.com/api#/
 
 ## Tests
 
   Testes unitários: podem ser encontrados na pasta test dentro de cada entidade. O comando para executar é "npm run test"
+  
   Testes E2E: Podem ser encontrados na pasta test na raiz do projeto. O comando para executar é "npm run test:e2e"
 
 ## Diagrama Banco de Dados:
