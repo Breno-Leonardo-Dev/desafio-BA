@@ -7,7 +7,7 @@ import { CreateCropsPlantedDto } from '../dto/create-crops.dto';
 import { ResponseCropsPlantedDto } from '../dto/response-crops.dto';
 import { UpdateCropsPlantedDto } from '../dto/update-crops.dto';
 
-jest.mock('../../utils/validations', () => ({
+jest.mock('../../utils/utils', () => ({
   validateCrop: jest.fn((crop) => {
     const validCrops = ['SOYBEANS', 'CORN', 'COTTON', 'COFFEE', 'SUGAR_CANE'];
     return validCrops.includes(crop);
