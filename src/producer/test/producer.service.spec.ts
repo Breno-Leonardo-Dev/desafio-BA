@@ -6,7 +6,7 @@ import { ResponseProducerDto } from '../dto/response-producer.dto';
 import { ProducerRepository } from '../producer.repository';
 import { ProducerService } from '../producer.service';
 
-jest.mock('../../utils/validations', () => ({
+jest.mock('../../utils/utils', () => ({
   encrypt: jest.fn(() => 'encryptedCpf'),
   decrypt: jest.fn(() => 'decryptedCpf'),
   isValidCPF: jest.fn((valid) => {
