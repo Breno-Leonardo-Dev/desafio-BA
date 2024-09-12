@@ -12,7 +12,7 @@ import { UpdateFarmDto } from '../dto/update-farm.dto';
 import { FarmRepository } from '../farm.repository';
 import { FarmService } from '../farm.service';
 
-jest.mock('../../utils/validations', () => ({
+jest.mock('../../utils/utils', () => ({
   encrypt: jest.fn(() => 'encryptedCnpj'),
   decrypt: jest.fn(() => 'decryptedCnpj'),
   isValidCNPJ: jest.fn((valid) => {
