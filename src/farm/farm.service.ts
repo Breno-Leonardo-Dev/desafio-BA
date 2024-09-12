@@ -118,7 +118,7 @@ export class FarmService {
     if (result && result.cnpj) {
       result.cnpj = decrypt(result.cnpj, process.env.ENCRYPT_KEY);
     }
-    return new ResponseFarmDto(result);
+    return result;
   }
 
   async getFarmStatistics() {
